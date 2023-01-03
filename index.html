@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUNDED</title>
+
+    <link rel="stylesheet" href="css/hamberger_btn/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/header_hamberger_btn/motion.js"></script>
+    <!--m_menu-->
+
+    <link rel="stylesheet" href="css/banner_slide/swiper-bundle.min.css">
+    <!--banner_swiper-->
+
+    <link rel="stylesheet" type="text/css" href="css/section2_slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/section2_slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/section2_slick/style.css">
+    <!--section2_slick-->
+
+    <link rel="stylesheet" type="text/css" href="css/section3_slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/section3_slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/section3_slick/style.css">
+    <!--section3_slick-->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/rounded_favicon.png">
+    <link rel="stylesheet" href="css/style_7.css">
+    <!--my_css-->
+</head>
+<body>
+    <div id="fixed_scroll">
+        <div class="fixed_scroll_y">
+            <a href="#">
+                <img src="images/all_fixed_scroll_y_w.png" alt="fs_y">
+                <p class="fixed_text">LET'S <br>PLAY</p>
+            </a>
+        </div>
+        <div class="fixed_scroll_p">
+            <a href="#">
+                <img src="images/all_fixed_scroll_p_w.png" alt="fs_p">
+                <p class="fixed_text">APP</p>
+            </a>
+        </div>
+        <div class="fixed_scroll_m">
+            <a href="#">
+                <img src="images/all_fixed_scroll_m_w.png" alt="fs_m">
+                <p class="fixed_text">TOP</p>
+            </a>
+        </div>
+    </div>
+    <!--m_btn_s-->
+    <div class="m_btn">
+        <div class="menu_btn pc_hide"><a href="#">       
+            <img src="images/banner/hamberger_btn.png" alt="hamberger_btn">
+        </a></div>
+        <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="close_btn"><a href="#">
+                    <img src="images/banner/close_btn.png" alt="close_btn">
+                </a></div>
+            <ul class="menu_wrap">
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+                <li><a href="#">LET'S PLAY</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--m_btn_f-->
+    <div id="header_wrap">
+        <!--Swiper_S-->
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide banner1"></div>
+			<div class="swiper-slide banner2"></div>
+			<div class="swiper-slide banner3"></div>
+			<div class="swiper-slide banner4"></div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!-- Swiper JS -->
+        
+        
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoplay: {//자동재생
+				delay: 3000,//슬라이드 넘어가는 시간
+				disableOnInteraction: false,
+			},
+			loop: true,//반복
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			}
+		});
+	</script>
+    <!--Swiper_E-->
+        <div class="header"><!--가운데-->
+            <ul class="util mobile_hide tablet_hide">
+                <li><a href="#">
+                    <p class="icon"><img src="images/main_icon_login.png" alt="login"></p>
+                    <p class="tablet_hide">LOGIN</p>
+                </a></li>
+                <li><a href="#">
+                    <p class="icon"><img src="images/main_icon_join.png" alt="join"></p>
+                    <p class="tablet_hide">JOIN</p>
+                </a></li>
+                <li><a href="#">
+                    <p class="icon"><img src="images/main_icon_basket.png" alt="basket"></p>
+                    <p class="tablet_hide">BASKET</p>
+                </a></li>
+                <li><a href="#">
+                    <p class="icon"><img src="images/main_icon_mypage.png" alt="mypage"></p>
+                    <p class="tablet_hide">MYPAGE</p>
+                </a></li>
+            </ul>
+            <div class="gnb_wrap">
+                <h1><a href="#">
+                    <img src="images/main_logo.png" alt="main_logo" class="mobile_hide">
+                </a></h1>
+                <h1 class="mobile_logo"><a href="#">
+                    <img src="images/main_logo_white.png" alt="main_logo">
+                </a></h1>
+                <ul class="gnb tablet_hide">
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                    <li><a href="#">LET'S PLAY</a></li>
+                </ul>
+                <div class="search_bar tablet_hide">
+                    <a href="#">
+                        <img src="images/header_search.png" alt="header_search">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section1_wrap">
+        <!--bg-->
+        <div class="section section1">
+            <h2><img src="images/section1/title_best_sellers.png" alt="best_sellers"></h2>
+            <div class="more_btn_wrap">
+            <p class="more_btn"><a href="#">More</a></p>
+            </div>
+            <ul class="menu tablet_hide">
+                <li><a href="#">
+                    <img src="images/section1/menu_1.png" alt="menu_1">
+                    <div class="menu_info">
+                        <p class="menu_title">스트로베리 필드</p>
+                        <br>
+                        <p class="menu_price">2,000</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_2.png" alt="menu_2">
+                    <div class="menu_info">
+                        <p class="menu_title">오레오 모카</p>
+                        <br>
+                        <p class="menu_price">2,500</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_3.png" alt="menu_3">
+                    <div class="menu_info">
+                        <p class="menu_title">진저브레드 쿠키</p>
+                        <br>
+                        <p class="menu_price">2,500</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_4.png" alt="menu_4">
+                    <div class="menu_info">
+                        <p class="menu_title">피치 블라썸 프라푸치노</p>
+                        <br>
+                        <p class="menu_price">3,500</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_5.png" alt="menu_5">
+                    <div class="menu_info">
+                        <p class="menu_title">바바리안 크림</p>
+                        <br>
+                        <p class="menu_price">2,000</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_6.png" alt="menu_6">
+                    <div class="menu_info">
+                        <p class="menu_title">퍼플 레몬에이드</p>
+                        <br>
+                        <p class="menu_price">3,500</p>
+                    </div>
+                </a></li>
+            </ul>
+            <ul class="tablet_menu pc_hide">
+                <li><a href="#">
+                    <img src="images/section1/menu_1_bg.png" alt="menu_1_bg">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_2_bg.png" alt="menu_2_bg">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_3_bg.png" alt="menu_3_bg">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_4_bg.png" alt="menu_4_bg">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_5_bg.png" alt="menu_5_bg">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/section1/menu_6_bg.png" alt="menu_6_bg">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section2_wrap">
+        <div class="section section2">
+            <h2><img src="images/section2/title_event.png" alt="event"></h2>
+                <div class="more_btn_wrap mbtn1">
+                <p class="more_btn mbtn1c"><a href="#">More</a></p>
+                </div>
+        <!--slick_s-->
+        <section class="regular slider">
+            <div>
+                    <div class="gallery">
+                        <img src="images/section2/main_event_banner_1.png" alt="event_banner_1">
+                        <div class="event_text">
+                            <ul class="event_btn">
+                                <li>IN-STORE</li>
+                                <li>ONLINE</li>
+                            </ul>
+                            <strong>솔티드 캬라멜 만다린 도넛 출시!!</strong>
+                            <br>
+                            <p class="event_btn2">상시진행</p>
+                        </div>
+                    </div>
+            </div>
+            <div>
+              <div class="gallery">
+                        <img src="images/section2/main_event_banner_2.png" alt="event_banner_2">
+                        <div class="event_text">
+                            <ul class="event_btn">
+                                <li>IN-STORE</li>
+                                <li>ONLINE</li>
+                            </ul>
+                            <strong>솔티드 캬라멜 만다린 도넛 출시!!</strong>
+                            <br>
+                            <p class="event_btn2">상시진행</p>
+                        </div>
+                    </div>
+            </div>
+            <div>
+              <div class="gallery">
+                        <img src="images/section2/main_event_banner_3.png" alt="event_banner_3">
+                        <div class="event_text">
+                            <ul class="event_btn">
+                                <li>IN-STORE</li>
+                                <li>ONLINE</li>
+                            </ul>
+                            <strong>솔티드 캬라멜 만다린 도넛 출시!!</strong>
+                            <br>
+                            <p class="event_btn2">상시진행</p>
+                        </div>
+                    </div>
+            </div>
+            <div>
+              <div class="gallery">
+                        <img src="images/section2/main_event_banner_4.png" alt="event_banner_4">
+                        <div class="event_text">
+                            <ul class="event_btn">
+                                <li>IN-STORE</li>
+                                <li>ONLINE</li>
+                            </ul>
+                            <strong>솔티드 캬라멜 만다린 도넛 출시!!</strong>
+                            <br>
+                            <p class="event_btn2">상시진행</p>
+                        </div>
+                    </div>
+            </div>
+            <div>
+              <div class="gallery">
+                        <img src="images/section2/main_event_banner_3.png" alt="event_banner_3">
+                        <div class="event_text">
+                            <ul class="event_btn">
+                                <li>IN-STORE</li>
+                                <li>ONLINE</li>
+                            </ul>
+                            <strong>솔티드 캬라멜 만다린 도넛 출시!!</strong>
+                            <br>
+                            <p class="event_btn2">상시진행</p>
+                        </div>
+                    </div>
+            </div>
+          </section>
+          
+        
+        
+        
+          <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+          <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+          <script type="text/javascript">
+            $(document).on('ready', function() {
+            $(".regular").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+            slidesToShow: 4, /* 화면에 보여질 이미지 갯수*/        
+            slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+            autoplay: true, /* 자동으로 다음이미지 보여주기 */         
+            arrows: true, /* 화살표 */         
+            dots:true, /* 아래점 */         
+            autoplaySpeed:1000,/* 다음이미지로 넘어갈 시간 */         
+            speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+            pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+            //vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
+            
+            responsive: [ // 반응형 웹 구현 옵션
+                {  
+                  breakpoint: 1199, //화면 사이즈 960px
+                  settings: {
+                    slidesToShow: 3
+                  } 
+                },
+                {  
+                  breakpoint: 1000, //화면 사이즈 960px
+                  settings: {
+                    slidesToShow: 2
+                  } 
+                },
+                {  
+                  breakpoint: 900, //화면 사이즈 960px
+                  settings: {
+                    slidesToShow: 2
+                  } 
+                },
+                { 
+                  breakpoint: 768, //화면 사이즈 768px
+                  settings: {    
+                    slidesToShow: 2
+                  } 
+                }
+              ]
+                   });
+        
+            });
+        </script>
+        <!--slick_f-->
+        <h2 class="title_jom"><img src="images/section2/title_join_our_membership.png" alt="join_our_membership"></h2>
+        <ul class="membership">
+            <li>
+                <div class="img_wrap">
+                    <img src="images/section2/membership_1.png" alt="membership_1">
+                </div>
+            </li>
+            <li>
+                <div class="membership_text">
+                    <h3>멤버쉽 가입하면 혜택이 팡팡!!!</h3>
+                    <p class="point_line"></p>
+                    <p><strong>ROUNDED APP</strong> 을 다운받으면
+                        <br>다양한 리워드와 혜택이 쏟아집니다!</p>
+                    <p>오프라인 매장, 앱에서 제품을
+                        <br>구입하고 도넛 포인트를 차곡 차곡 모아요!</p>
+                    <p>모은 도넛 포인트로 <strong>ROUNDED</strong> 의 모든
+                        <br>상품들을 무료로 즐기세요!</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="store_btn">
+            <li><a href="#">
+                <div class="img_wrap">
+                    <img src="images/section2/Googleplay_btn.png" alt="Googleplay">
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="img_wrap">
+                    <img src="images/section2/appstore_btn.png" alt="appstore">
+                </div>
+            </a></li>
+        </ul>
+        </div>
+    </div>
+    <div id="section3_wrap">
+        <div class="section section3">
+            <div class="point_line">
+                <img src="images/section3/point_line.png" alt="point_line">
+            </div>
+            <!--slick_s-->
+            <section class="regular slider">
+                <div>
+                  <img src="images/section3/gallery_pic_1.png" alt="gallery_pic_1">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_2.png" alt="gallery_pic_2">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_3.png" alt="gallery_pic_3">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_4.png" alt="gallery_pic_4">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_1.png" alt="gallery_pic_1">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_2.png" alt="gallery_pic_2">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_3.png" alt="gallery_pic_3">
+                </div>
+                <div>
+                    <img src="images/section3/gallery_pic_4.png" alt="gallery_pic_4">
+                </div>
+              </section>
+            
+            
+            
+            
+              <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+              <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+              <script type="text/javascript">
+                $(document).on('ready', function () {
+                  $(".regular").slick({
+                    infinite: true, /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+                    slidesToShow: 7, /* 화면에 보여질 이미지 갯수*/
+                    slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
+                    autoplay: true, /* 자동으로 다음이미지 보여주기 */
+                    /*arrows: true,  화살표 */
+                    /*dots:true,  아래점 */
+                    cssEase: 'linear',  /* 등속 */
+                    autoplaySpeed: 0,/* 다음이미지로 넘어갈 시간 */
+                    speed: 3000, /* 다음이미지로 넘겨질때 걸리는 시간 */
+                    pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
+                    //vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/ 
+                    draggable : true, 	//드래그 가능 여부 
+                            
+                            responsive: [ // 반응형 웹 구현 옵션
+                                {  
+                                    breakpoint: 960, //화면 사이즈 960px
+                                    settings: {
+                                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                        slidesToShow:5 
+                                    } 
+                                },
+                                { 
+                                    breakpoint: 768, //화면 사이즈 768px
+                                    settings: {	
+                                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                        slidesToShow:2 
+                                    } 
+                                }
+                            ]       
+                  });
+            
+                });
+              </script>
+            <!--slick_f-->
+            <div class="point_star">
+                <img src="images/section3/point_star.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="footer_wrap">
+        <div class="footer">
+            <ul class="footer_link">
+                <li><a href="#">
+                    고객센터
+                </a></li>
+                <li><a href="#">
+                    이용약관
+                </a></li>
+                <li><a href="#">
+                    개인정보처리방침
+                </a></li>
+                <li><a href="#">
+                    체인문의
+                </a></li>
+            </ul>
+            <div class="footer_contents">
+                <p>
+                    사업자 등록번호 : 123-45-67890 라운디드(주)
+                   <br>대표이사 : 김민경
+                   <br>라운디드 플래닛 라운디드구 라운디드 길 1004
+                   <br>TEL : 080-777-7777
+                   <br>개인정보관리책임자 : 김라운디
+                   <br>ⓒ 2022 ROUNDED. All Rights Reserved.
+                </p>
+                <div class="follow_us">
+                    <div class="img_wrap">
+                        <img src="images/footer_title_follow_us.png" alt="follow_us">
+                    </div>
+                    <ul class="sns">
+                        <li><a href="#">
+                                <img src="images/footer_icon_facebook.png" alt="icon_facebook">
+                        </a></li>
+                        <li><a href="#">
+                                <img src="images/footer_icon_instagram.png" alt="icon_instagram">
+                        </a></li>
+                        <li><a href="#">
+                                <img src="images/footer_icon_twitter.png" alt="icon_twitter">
+                        </a></li>
+                        <li><a href="#">
+                                <img src="images/footer_icon_youtube.png" alt="icon_youtube">
+                        </a></li>
+                    </ul>
+                </div>
+                <h2><a href="#">
+                    <img src="images/footer_logo.png" alt="footer_logo">
+                </a></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

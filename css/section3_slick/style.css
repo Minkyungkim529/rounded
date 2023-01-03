@@ -1,0 +1,49 @@
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .slider div{
+      border-radius: 25px;
+    }
+    .slider img{
+      display: inline-block;
+      border-radius: 25px;
+    }
+
+    .slick-slide {
+      margin-bottom: 50px;
+    }
+
+    .slick-slide img {
+      width: 90%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none;
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
