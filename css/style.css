@@ -906,6 +906,9 @@ body{
     width: 1200px;
     margin: 0 auto;
 }
+.point_line{
+    padding-bottom: 150px;
+}
 .point_line img{
     display: block;
     width: 100%;
