@@ -694,10 +694,6 @@ body{
     margin: 20px;
     width: 440px;
 }
-.membership li:hover{
-    transform: rotateY(360deg);
-    transition: transform 2s;
-}
 .membership .img_wrap{
     display: block;
 }
