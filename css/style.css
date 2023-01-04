@@ -89,6 +89,37 @@ a{text-decoration: none; color: #3d3d3d;}
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 /*fixed_scroll_animation*/
+@media(max-width:500px){
+    .fixed_scroll_y img,
+    .fixed_scroll_p img,
+    .fixed_scroll_m img{
+        width: 50%;
+    }
+    .fixed_scroll_y{
+        position: fixed;
+        top: 71%;
+        right: -50px;
+        z-index: 99999;
+    }
+    .fixed_scroll_p{
+        position: fixed;
+        top: 77%;
+        right: -50px;
+        z-index: 9999;
+    }
+    .fixed_scroll_m{
+        position: fixed;
+        top: 83%;
+        right: -50px;
+        z-index: 999;
+    }
+    .fixed_text{
+        top: 20px;
+        right: 120px;
+        font-size: 10px;
+        display: none;
+    }
+}
 @keyframes motion{
     0%{
         transform: scaleX(1);
@@ -420,6 +451,10 @@ body{
     .tablet_hide{
         display: none;
     }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
 }
 
 /*header_mobile*/
@@ -577,15 +612,17 @@ body{
         background-size: cover;
     }
     .tablet_menu{
-        width: 90%;
+        width: 100%;
+        justify-content: center;
     }
     .tablet_menu li{
-        width: 49%;
+        width: 80%;
         padding: 2%;
     }
     .tablet_menu  li img{
         display: block;
         width: 100%;
+        border-radius: 100px;
     }
     .tablet_hide{
         display: none;
@@ -611,7 +648,7 @@ body{
 .section2{
     width: 1200px;
     margin: 0 auto;
-    padding: 150px 0;
+    padding: 200px 0;
     overflow: hidden;
 }
 .event{
@@ -847,12 +884,12 @@ body{
         text-align: left;
     }
     .section2 .slick-slide img{
-        width: 100%;
+        width: 85%;
     }
 }
 @media(max-width:768px){
-    #section2_wrap{
-        box-sizing: border-box;
+    .section2{
+        padding-top: 200px;
     }
     .membership{
         width: 100%;
@@ -886,10 +923,15 @@ body{
     .store_btn li:nth-child(2){
         text-align: center;
     }
-    @media(max-width:399px){
-        .section2{
-            padding: 250px 0 50px;
-        }
+}
+@media(max-width:500px){
+    .section2 .slick-slide img{
+        width: 100%;
+    }
+}
+@media(max-width:399px){
+    .section2{
+        padding: 250px 0 50px;
     }
 }
 
