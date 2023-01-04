@@ -15,11 +15,12 @@ html {
 }
 .menu_btn {
     display: inline-block;
-    padding: 40px 20px 0;
+    padding: 20px;
 }
 
 .menu_btn img {
     display: inline-block;
+    width: 70%;
 }
 
 .menu_bg {

@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+    display: none;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -88,7 +89,7 @@
 }
 .slick-prev:before
 {
-    content: url(../images/left_btn.png);
+    content: url(../../images/banner/banner_btn_left_2.png);
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +107,7 @@
 }
 .slick-next:before
 {
-    content: url(../images/right_btn.png);
+    content: url(../../images/banner/banner_btn_right_2.png);
 }
 [dir='rtl'] .slick-next:before
 {
