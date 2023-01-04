@@ -410,6 +410,9 @@ body{
         z-index: 99;
         text-align: left;
     }
+    .header h1 img{
+        width: 70px;
+    }
 }
 
 /*header_tablet1000*/
@@ -446,7 +449,7 @@ body{
         text-align: center;
     }
     .header h1 img{
-        width: 60%;
+        width: 70px;
     }
     .tablet_hide{
         display: none;
@@ -459,6 +462,17 @@ body{
 
 /*header_mobile*/
 @media (max-width:768px){
+    .tablet_hide{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    .banner1,.banner3{
+        background-image: url(../images/banner/main_banner_1_w300.png);
+    }
+    .banner2,.banner4{
+        background-image: url(../images/banner/main_banner_2_w300.png);
+    }
     .tablet_hide{
         display: none;
     }
@@ -589,7 +603,7 @@ body{
     }
     .tablet_menu li{
         width: 32.3%;
-        padding: 1.5%;
+        padding: 30px;
         margin-top: 15px;
     }
     .tablet_menu  li img{
@@ -617,7 +631,7 @@ body{
     }
     .tablet_menu li{
         width: 80%;
-        padding: 2%;
+        padding: 30px;
     }
     .tablet_menu  li img{
         display: block;
@@ -628,27 +642,38 @@ body{
         display: none;
     }
 }
-@media(max-width:400px){
+@media(max-width:450px){
     .section1{
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
     .section1 h2{
-        padding: 100px 0 30px;
+        padding-top: 50px;
     }
 }
 /*section2_S*/
 #section2_wrap{
-    background-image: url(../images/section2/main_section2_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     box-sizing: border-box;
     text-align: center;
+}
+.bg1{
+    width: 100%;
+    background-image: url(../images/section2/main_section2_bg_1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 150px 0;
+}
+.bg2{
+    background-image: url(../images/section2/main_section2_bg_2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
 }
 .section2{
     width: 1200px;
     margin: 0 auto;
-    padding: 200px 0;
     overflow: hidden;
 }
 .event{
@@ -710,29 +735,32 @@ body{
 .membership li:nth-child(1){
     height: 330px;
 }
-.membership li:nth-child(2){
-    overflow: hidden;
-    border-radius: 20px;
-    background: linear-gradient(135deg, rgb(255, 252, 223), rgb(255, 255, 255), rgb(255, 228, 249));
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.membership_text{
+@media(min-width:451px){
+    .membership li:nth-child(2){
+        overflow: hidden;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgb(255, 252, 223), rgb(255, 255, 255), rgb(255, 228, 249));
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .membership_text{
     padding: 50px;
     box-sizing: border-box;
-}
-.membership_text h3{
-    display: inline-block;
-    background-color: #ffebbd;
-    border-radius: 7px;
-    margin-bottom: 10px;
+    }
+    .membership_text h3{
+        display: inline-block;
+        background-color: #ffebbd;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    .membership_text strong{
+        background-color: #ffc2e4;
+        border-radius: 5px;
+    }
 }
 .membership_text p{
     padding: 5px 0;
 }
-.membership_text strong{
-    background-color: #ffc2e4;
-    border-radius: 5px;
-}
+
 .more_btn_wrap{
     display: inline-block;
     width: 68%;
@@ -771,7 +799,6 @@ body{
 }
 .title_jom img{
     display: inline-block;
-    padding-top: 200px;
 }
 .title_jom{
     margin-bottom: 50px;
@@ -781,10 +808,6 @@ body{
 /*section2_tablet*/
 @media(max-width:1199px){
     #section2_wrap{
-        box-sizing: border-box;
-        background-image: url(../images/section2/main_section2_bg.png);
-        background-repeat: no-repeat;
-        background-position: center bottom;
         text-align: center;
     }
     .section2{
@@ -797,7 +820,6 @@ body{
     .event{
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 200px;
     }
     .gallery{
         width: 96%;
@@ -843,9 +865,6 @@ body{
     .store_btn li:nth-child(2){
         text-align: left;
     }
-    .title_jom{
-        padding-top: 300px;
-    }
     .title_jom img{
         display: inline-block;
     }
@@ -874,7 +893,6 @@ body{
     }
     .title_jom img{
         display: inline-block;
-        padding-top: 200px;
     }
     
     .store_btn li:nth-child(1){
@@ -887,10 +905,7 @@ body{
         width: 85%;
     }
 }
-@media(max-width:768px){
-    .section2{
-        padding-top: 200px;
-    }
+@media(min-width:450px) and (max-width:768px){
     .membership{
         width: 100%;
     }
@@ -899,6 +914,7 @@ body{
     }
     .membership li:nth-child(2){
         overflow: auto;
+        padding: 60px 0 60px;
     }
     .membership_text{
         padding: 30px;
@@ -914,8 +930,45 @@ body{
         flex-direction: column;
         justify-content: space-between;
     }
-    .title_jom img{
-        padding-top: 200px;
+    .store_btn li:nth-child(1){
+        text-align:center;
+    }
+    .store_btn li:nth-child(2){
+        text-align: center;
+    }
+}
+@media(max-width:450px){
+    .bg1,.bg2{
+        padding: 100px 0;
+    }
+    .membership{
+        width: 100%;
+        font-size: 14px;
+    }
+    .membership li{
+        width: 80%;
+    }
+    .membership li:nth-child(2){
+        width: 100%;
+        margin: 0 auto;
+        align-self: flex-start;
+        padding: 5px;
+    }
+    .membership_text h3{
+        display: inline-block;
+        border-bottom: 5px dotted #FF7AC5;
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+    .membership_text p strong{
+        background-color: #fff1c4;
+    }
+    .store_btn{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .store_btn li:nth-child(1){
         text-align:center;
@@ -927,11 +980,6 @@ body{
 @media(max-width:500px){
     .section2 .slick-slide img{
         width: 100%;
-    }
-}
-@media(max-width:399px){
-    .section2{
-        padding: 250px 0 50px;
     }
 }
 
@@ -1015,9 +1063,12 @@ body{
         width: 95%;
       }
 }
-@media(max-width:399px){
+@media(max-width:450px){
     .section3{
-        padding: 50px 0;
+        padding: 100px 0;
+    }
+    .point_line{
+        padding-bottom: 200px;
     }
 }
 

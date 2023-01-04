@@ -120,10 +120,10 @@
     margin-bottom: 30px;
 }
 
-.slick-dots
+.section2 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
 
     display: block;
 
