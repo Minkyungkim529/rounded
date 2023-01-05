@@ -485,6 +485,7 @@ body{
     background-size: cover;
     overflow: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 .section1{
     width: 1200px;
@@ -655,6 +656,13 @@ body{
 #section2_wrap{
     box-sizing: border-box;
     text-align: center;
+    position: relative;
+}
+.character_2{
+    position: absolute;
+    top: -5%;
+    right: 30%;
+    z-index: 99;
 }
 .bg1{
     width: 100%;
@@ -691,7 +699,7 @@ body{
 }
 .event_btn li,.event_btn2{
     background-color: #FF3096;
-    padding: 0px 10px;
+    padding: 4px 10px;
     border-radius: 30px;
     color: #fff;
     font-size: 12px;
@@ -1179,7 +1187,7 @@ body{
         height: 700px;
     }
     .footer{
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
     }
     .footer_link{
