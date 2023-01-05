@@ -1061,14 +1061,14 @@ body{
         display: inline-block;
     }
     .section3 .slick-slide img {
-        width: 95%;
+        width: 65%;
         display: inline-block;
       }
 }
 @media(max-width:1000px){
 }
 @media(max-width:768px){
-    .slick-slide img {
+    .section3 .slick-slide img {
         width: 95%;
       }
 }
