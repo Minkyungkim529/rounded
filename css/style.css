@@ -655,6 +655,70 @@ body{
     .tablet_hide{
         display: none;
     }
+    .mobile_menu1_hide{
+        display: none;
+    }
+    /*mobile_menu*/
+    .mobile_menu{
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mobile_menu li{
+        width: 48%;
+        padding-bottom: 52px;
+        margin-bottom: 30px;
+        position: relative;
+        border-radius: 50px;
+    }
+    .mobile_menu li:nth-child(1){
+        background: url(../images/section1/mobile_menu_1.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(2){
+        background: url(../images/section1/mobile_menu_2.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(3){
+        background: url(../images/section1/mobile_menu_3.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(4){
+        background: url(../images/section1/mobile_menu_4.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(5){
+        background: url(../images/section1/mobile_menu_5.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(6){
+        background: url(../images/section1/mobile_menu_6.png) no-repeat center top;
+    }
+    .mobile_menu li:nth-child(2),
+    .mobile_menu li:nth-child(4),
+    .mobile_menu li:nth-child(6){
+        margin-top: 50px1;
+    }
+    .mobile_menu img{
+        display: inline-block;
+        width: 100%;
+    }
+    .menu_info{
+        margin-top: 230px;
+        padding: 0 20px;
+    }
+    .menu_title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .menu_price{
+        margin-top: 10px;
+    }
+}
+@media(min-width:768px){
+    .tablet_hide2{
+        display: none;
+    }
 }
 @media(max-width:450px){
     .section1{
@@ -726,8 +790,12 @@ body{
 }
 .event_text strong{
     display: inline-block;
-    border-bottom: 1px solid #3d3d3d;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.6);
     padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0.14em;
 }
 .membership{
     width: 80%;
@@ -924,6 +992,16 @@ body{
     }
     .section2 .slick-slide img{
         width: 85%;
+    }
+}
+@media(max-width:500px){
+    .event_text strong{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .mobile_hide{
+        display: none;
     }
 }
 @media(min-width:450px) and (max-width:768px){

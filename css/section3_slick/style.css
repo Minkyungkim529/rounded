@@ -13,7 +13,7 @@ html, body {
         text-align: center;
     }
     .slider div{
-      border-radius: 25px;
+      border-radius: 0;
     }
     .slider img{
       display: inline-block;
