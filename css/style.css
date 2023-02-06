@@ -811,6 +811,7 @@ body{
     box-sizing: border-box;
     margin: 20px;
     width: 440px;
+    transition: transform 1.5s;
 }
 .membership .img_wrap{
     display: block;
@@ -820,17 +821,21 @@ body{
     width: 100%;
     border-radius: 20px;
     background-color: #FF7AC5;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .membership li:nth-child(1){
     height: 330px;
+}
+.membership li:hover{
+    transform: rotateY(360deg);
+    transition: transform 1.5s;
 }
 @media(min-width:451px){
     .membership li:nth-child(2){
         overflow: hidden;
         border-radius: 20px;
         background: linear-gradient(135deg, rgb(255, 252, 223), rgb(255, 255, 255), rgb(255, 228, 249));
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
     .membership_text{
     padding: 50px;
