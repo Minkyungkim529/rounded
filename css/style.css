@@ -14,15 +14,15 @@ a{text-decoration: none; color: #3d3d3d;}
     top: 65%;
     right: 0px;
     z-index: 99999;
+    width: 80px;
 }
 .fixed_scroll_y img{
-    width: 80px;
     animation: motion3 1s;
     animation-delay: 1s;
-
+    width: 100%;
 }
 .fixed_scroll_y:hover{
-    animation: motion 0.8s;
+    animation: motion2 0.8s;
 }
 .fixed_scroll_y:hover .fixed_text{
     display: block;
@@ -32,14 +32,16 @@ a{text-decoration: none; color: #3d3d3d;}
     top: 74%;
     right: 0px;
     z-index: 9999;
+    width: 80px;
 }
 .fixed_scroll_p img{
     width: 80px;
     animation: motion3 1s;
     animation-delay: 2s;
+    width: 100%;
 }
 .fixed_scroll_p:hover{
-    animation: motion 0.8s;
+    animation: motion2 0.8s;
     z-index: 999999
 }
 .fixed_scroll_p:hover .fixed_text{
@@ -51,14 +53,16 @@ a{text-decoration: none; color: #3d3d3d;}
     top: 83%;
     right: 0px;
     z-index: 999;
+    width: 80px;
 }
 .fixed_scroll_m img{
     width: 80px;
     animation: motion3 1s;
     animation-delay: 3s;
+    width: 100%;
 }
 .fixed_scroll_m:hover{
-    animation: motion 0.8s;
+    animation: motion2 0.8s;
     z-index: 9999999;
 }
 .fixed_scroll_m:hover .fixed_text{
@@ -93,6 +97,11 @@ a{text-decoration: none; color: #3d3d3d;}
     .fixed_scroll_y img,
     .fixed_scroll_p img,
     .fixed_scroll_m img{
+        width: 100%;
+    }
+    .fixed_scroll_y,
+    .fixed_scroll_p,
+    .fixed_scroll_m{
         width: 50px;
     }
     .fixed_scroll_y{
@@ -149,53 +158,53 @@ a{text-decoration: none; color: #3d3d3d;}
 @keyframes motion2{
     0%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     20%{
         transform: scaleX(1.1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     40%{
         transform: scaleY(1.1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     60%{
         transform: scaleX(1.1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     80%{
         transform: scaleY(1.05);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     100%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
 }
 @keyframes motion3{
     0%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     20%{
         transform: scaleX(1.05);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     40%{
         transform: scaleY(1.05);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     60%{
         transform: scaleX(1.05);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     80%{
         transform: scaleY(1.03);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     100%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
 }
 /*fixed_scroll_animation_f*/
@@ -205,6 +214,7 @@ body{
     font-family: 'NanumSquareRound';
     font-weight: bold;
     background-color: #fff;
+    overflow-x: hidden;
 }
 /*Header_PC_S*/
 
@@ -576,7 +586,7 @@ body{
     }
     .menu li:nth-child(6){
         bottom: 135px;
-        right: 0;
+        right: 0px;
     }
     .menu_info{
         position: absolute;
