@@ -12,11 +12,11 @@ a{text-decoration: none; color: #3d3d3d;}
 .fixed_scroll_y{
     position: fixed;
     top: 65%;
-    right: -20px;
+    right: 0px;
     z-index: 99999;
 }
 .fixed_scroll_y img{
-    width: 80%;
+    width: 80px;
     animation: motion3 1s;
     animation-delay: 1s;
 
@@ -30,11 +30,11 @@ a{text-decoration: none; color: #3d3d3d;}
 .fixed_scroll_p{
     position: fixed;
     top: 74%;
-    right: -20px;
+    right: 0px;
     z-index: 9999;
 }
 .fixed_scroll_p img{
-    width: 80%;
+    width: 80px;
     animation: motion3 1s;
     animation-delay: 2s;
 }
@@ -49,11 +49,11 @@ a{text-decoration: none; color: #3d3d3d;}
 .fixed_scroll_m{
     position: fixed;
     top: 83%;
-    right: -20px;
+    right: 0px;
     z-index: 999;
 }
 .fixed_scroll_m img{
-    width: 80%;
+    width: 80px;
     animation: motion3 1s;
     animation-delay: 3s;
 }
@@ -93,24 +93,24 @@ a{text-decoration: none; color: #3d3d3d;}
     .fixed_scroll_y img,
     .fixed_scroll_p img,
     .fixed_scroll_m img{
-        width: 50%;
+        width: 50px;
     }
     .fixed_scroll_y{
         position: fixed;
         top: 71%;
-        right: -50px;
+        right: 0px;
         z-index: 99999;
     }
     .fixed_scroll_p{
         position: fixed;
         top: 77%;
-        right: -50px;
+        right: 0px;
         z-index: 9999;
     }
     .fixed_scroll_m{
         position: fixed;
         top: 83%;
-        right: -50px;
+        right: 0px;
         z-index: 999;
     }
     .fixed_text{
@@ -123,27 +123,27 @@ a{text-decoration: none; color: #3d3d3d;}
 @keyframes motion{
     0%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     20%{
         transform: scaleX(1.2);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     40%{
         transform: scaleY(1.2);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     60%{
         transform: scaleX(1.2);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     80%{
         transform: scaleY(1.1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
     100%{
         transform: scaleX(1);
-        transform-origin: bottom;
+        transform-origin: right bottom;
     }
 }
 @keyframes motion2{
