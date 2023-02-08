@@ -207,6 +207,32 @@ a{text-decoration: none; color: #3d3d3d;}
         transform-origin: right bottom;
     }
 }
+@keyframes motion_b{
+    0%{
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+    20%{
+        transform: scaleX(1.05);
+        transform-origin: bottom;
+    }
+    40%{
+        transform: scaleY(1.05);
+        transform-origin: bottom;
+    }
+    60%{
+        transform: scaleX(1.05);
+        transform-origin: bottom;
+    }
+    80%{
+        transform: scaleY(1.03);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+}
 /*fixed_scroll_animation_f*/
 body{
     font-size: 16px;
@@ -315,9 +341,6 @@ body{
     height: 30px;
     margin-bottom: 2px;
 }
-.mobile_logo{
-    display: none;
-}
 .menu_link{
     width: 5%;
     position: absolute;
@@ -328,6 +351,9 @@ body{
 }
 .menu_link img{
     display: inline-block;
+}
+.logo_hide{
+    display: none;
 }
 /*header_pc_F*/
 
@@ -422,7 +448,17 @@ body{
         text-align: left;
     }
     .header h1 img{
-        width: 70px;
+        display: none;
+    }
+    .logo_hide{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+    }
+    .mobile_logo img{
+        width: 80px;
     }
 }
 
@@ -456,16 +492,6 @@ body{
         display: flex;
         justify-content: space-between;
         padding-top: 15px;
-    }
-    .mobile_logo{
-        display: inline-block;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        text-align: center;
-    }
-    .header h1 img{
-        width: 70px;
     }
     .tablet_hide{
         display: none;
@@ -562,7 +588,7 @@ body{
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
     .menu li:hover{
-        animation: motion2 0.8s;
+        animation: motion_b 0.8s;
     }
     .menu li:nth-child(1){
         top: 157px;
@@ -637,7 +663,7 @@ body{
         border-radius: 55px;
     }
     .tablet_menu  li img:hover{
-        animation: motion3 0.8s;
+        animation: motion_b 0.8s;
     }
     .tablet_hide{
         display: none;
@@ -684,6 +710,11 @@ body{
         margin-bottom: 30px;
         position: relative;
         border-radius: 50px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .mobile_menu li:hover{
+        animation: motion_b 0.8s;
     }
     .mobile_menu li:nth-child(1){
         background: url(../images/section1/mobile_menu_1.png) no-repeat center top;
@@ -713,8 +744,7 @@ body{
         width: 100%;
     }
     .menu_info{
-        margin-top: 230px;
-        padding: 0 20px;
+        padding: 230px 20px 0;
     }
     .menu_title{
         white-space: nowrap;
