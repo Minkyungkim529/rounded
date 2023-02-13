@@ -41,7 +41,7 @@ a{text-decoration: none; color: #3d3d3d;}
 }
 .fixed_scroll_p:hover{
     animation: motion 0.8s;
-    z-index: 999;
+    z-index: 999999;
 }
 .fixed_scroll_p:hover .fixed_text{
     display: block;
