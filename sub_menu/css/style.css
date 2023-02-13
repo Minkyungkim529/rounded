@@ -391,12 +391,15 @@ body{
 .menu{
     width: 100%;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 30px;
 }
 .menu li{
     float: left;
     width: 25%;
     position: relative;
+}
+.menu li img{
+    display: block;
 }
 .menu li:hover{
     animation: motion3 0.8s;
@@ -425,6 +428,9 @@ body{
 }
 .heart_hide{
     display: none;
+}
+.btn_wrap{
+    margin-bottom: 20px;
 }
 .btn_wrap p{
     display: inline-block;
@@ -474,6 +480,53 @@ body{
 .point_star_b img{
     display: inline-block;
 }
+
+.tab{
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+}
+.coffee{
+    position: relative;
+}
+.coffee> li{
+    width: 9%;
+    float: left;
+}
+.coffee> li:nth-child(1){
+    margin-left: 495px;
+}
+.coffee> li> p{
+    display: inline-block;
+    padding: 5px 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #00bbae;
+}
+.coffee> li> div{
+    height: 0;
+    overflow: hidden;
+}
+.coffee> li.mbtn_on> div{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+.hi{
+    cursor: pointer;
+}
+.mbtn_on .hi{
+    background-color: #FF30C8;
+}
+/* li.mbtn_on a:nth-child(1){
+    display: inline-block;
+    background: linear-gradient(125deg, #FF30C8, #57C0D1, #FFE29E);
+} */
 
 @font-face {
     font-family: 'SANJUGotgam';
