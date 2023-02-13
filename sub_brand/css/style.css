@@ -502,59 +502,56 @@ body{
 .section4 h2{
     padding-bottom: 50px;
 }
-.character{
+.tab{
     width: 740px;
+    height: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+}
+.character_tab{
     position: relative;
 }
-.character li{
-    width: 49%;
-    height: 450px;
-    border-radius: 30px;
-    background-color: #FF30C8;
-}
-.character_btn{
-    font-family: 'MaplestoryOTFBold';
-    display: inline-block;
-    padding-bottom: 60px;
-}
-.character_btn li{
+.character_tab> li{
+    width: 11%;
     float: left;
     margin: 0 10px;
-    display: block;
+}
+.character_tab> li a{
+    display: inline-block;
     padding: 5px 20px;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    cursor: pointer;
 }
-.cbtn_on{
-    box-shadow: 0 4px 0 #FF4B8F;
-}
-.character_btn li:nth-child(1){
+.character_tab li:nth-child(1) a{
     background-color: #EBC978;
 }
-.character_btn li:nth-child(2){
+.character_tab li:nth-child(1){
+    margin-left: 230px;
+}
+.character_tab li:nth-child(2) a{
     background-color: #57C0D1;
 }
-.character_btn li:nth-child(3){
+.character_tab li:nth-child(3) a{
     background-color: #CD78EB;
 }
-.c_info h2{
-    padding-bottom:20px;
+.character_tab> li> div{
+    height: 0;
+    overflow: hidden;
 }
-.c_info{
+.character_tab> li.cbtn_on> div{
     position: absolute;
-    top: 45px;
-    right: 50px;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 740px;
 }
-.c_info p{
-    padding-top: 30px;
+.cbtn_on a{
+    box-shadow: 0 4px 0 #FF4B8F;
 }
+
+
 /*section4_f*/
 
 /*footer_S*/
