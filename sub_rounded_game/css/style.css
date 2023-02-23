@@ -1,0 +1,396 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{color: #000; text-decoration: none;}
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-size: 18px;
+    font-family: 'ONE-Mobile-POP';
+    font-weight: none;
+    line-height: 1.5em;
+}
+
+/*fixed_scroll_s*/
+/*fixed_scroll*/
+.castle,.top{
+    position: fixed;
+    top: 35%;
+    right: 0px;
+    z-index: 999999;
+    width: 60px;
+    background-color: rgb(152, 214, 255);
+    border: 5px solid rgb(255, 255, 255);
+    border-right: none;
+    border-radius: 15px 0 0 15px;
+    padding: 6px;
+    animation: motion3 1s;
+}
+.top{
+    width: 60px;
+    height: 60px;
+    top: 77%;
+}
+.top img{
+    width: 100%;
+}
+.castle:hover,.top:hover{
+    animation: motion2 0.8s;
+}
+.castle img{
+    width: 100%;
+}
+.castle .fixed_text,
+.top .fixed_text{
+    top: 15px;
+}
+.castle:hover .fixed_text,
+.top:hover .fixed_text{
+    display: block;
+}
+.fixed_scroll_y{
+    position: fixed;
+    top: 45%;
+    right: 0px;
+    z-index: 99999;
+    width: 80px;
+}
+.fixed_scroll_y img{
+    animation: motion3 1s;
+    animation-delay: 1s;
+    width: 100%;
+}
+.fixed_scroll_y:hover{
+    animation: motion2 0.8s;
+}
+.fixed_scroll_y:hover .fixed_text{
+    display: block;
+}
+.fixed_scroll_p{
+    position: fixed;
+    top: 54%;
+    right: 0px;
+    z-index: 9999;
+    width: 80px;
+}
+.fixed_scroll_p img{
+    width: 80px;
+    animation: motion3 1s;
+    animation-delay: 2s;
+    width: 100%;
+}
+.fixed_scroll_p:hover{
+    animation: motion2 0.8s;
+    z-index: 999999;
+}
+.fixed_scroll_p:hover .fixed_text{
+    display: block;
+}
+
+.fixed_scroll_m{
+    position: fixed;
+    top: 63%;
+    right: 0px;
+    z-index: 999;
+    width: 80px;
+}
+.fixed_scroll_m img{
+    width: 80px;
+    animation: motion3 1s;
+    animation-delay: 3s;
+    width: 100%;
+}
+.fixed_scroll_m:hover{
+    animation: motion2 0.8s;
+    z-index: 9999999;
+}
+.fixed_scroll_m:hover .fixed_text{
+    display: block;
+}
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.fixed_text{
+    width: 100px;
+    font-family: 'MaplestoryOTFBold';
+    letter-spacing: 2px;
+    line-height: 1.5;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    text-align: center;
+    background: linear-gradient(135deg, #FFE29E, #57C0D1, #FF30C8);
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    display: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/*fixed_scroll_animation*/
+@keyframes motion{
+    0%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+    20%{
+        transform: scaleX(1.2);
+        transform-origin: right bottom;
+    }
+    40%{
+        transform: scaleY(1.2);
+        transform-origin: right bottom;
+    }
+    60%{
+        transform: scaleX(1.2);
+        transform-origin: right bottom;
+    }
+    80%{
+        transform: scaleY(1.1);
+        transform-origin: right bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+}
+@keyframes motion2{
+    0%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+    20%{
+        transform: scaleX(1.1);
+        transform-origin: right bottom;
+    }
+    40%{
+        transform: scaleY(1.1);
+        transform-origin: right bottom;
+    }
+    60%{
+        transform: scaleX(1.1);
+        transform-origin: right bottom;
+    }
+    80%{
+        transform: scaleY(1.05);
+        transform-origin: right bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+}
+@keyframes motion3{
+    0%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+    20%{
+        transform: scaleX(1.05);
+        transform-origin: right bottom;
+    }
+    40%{
+        transform: scaleY(1.05);
+        transform-origin: right bottom;
+    }
+    60%{
+        transform: scaleX(1.05);
+        transform-origin: right bottom;
+    }
+    80%{
+        transform: scaleY(1.03);
+        transform-origin: right bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: right bottom;
+    }
+}
+@keyframes motion_b{
+    0%{
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+    20%{
+        transform: scaleX(1.05);
+        transform-origin: bottom;
+    }
+    40%{
+        transform: scaleY(1.05);
+        transform-origin: bottom;
+    }
+    60%{
+        transform: scaleX(1.05);
+        transform-origin: bottom;
+    }
+    80%{
+        transform: scaleY(1.03);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+}
+/*fixed_scroll_animation_f*/
+/*fixed_scroll_f*/
+
+
+
+#banner{
+    height: 960px;
+    background: url(../images/game_title_banner.png) no-repeat center top;
+}
+#banner h1{
+    padding: 30px 0 0 30px;
+}
+#section1_wrap{
+    height: 1033px;
+    background: url(../images/section1_bg.png) no-repeat center;
+}
+.section1,
+.section2,
+.section3{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.section1 h2{
+    padding-bottom: 40px;
+}
+.ingame{
+    overflow: hidden;
+    display: inline-block;
+}
+.ingame li{
+    float: left;
+    margin: 10px 15px;
+}
+.ingame li img{
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#section2_wrap{
+    height: 1778px;
+    background: url(../images/section2_bg.png) no-repeat center;
+}
+.section2 h2,
+.section3 h2{
+    padding-bottom: 50px;
+}
+.img_wrap img{
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes ani{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+#section3_wrap{
+    height: 2073px;
+    background: url(../images/section3_bg.png) no-repeat center;
+}
+.section3{
+    position: relative;
+    padding: 100px 0;
+}
+.c_1 img,
+.c_2 img,
+.c_3 img{
+    display: inline-block;
+}
+.c_1,
+.c_2,
+.c_3{
+    animation: ani 4s infinite;
+}
+.c_text p:nth-child(1){
+    font-size: 30px;
+    margin: 20px 0;
+}
+.c_text{
+    margin-bottom: 30px;
+    color: #07417B;
+}
+.c_2{
+    width: 52%;
+    float: right;
+}
+.c_3{
+    width: 48%;
+    float: left;
+    margin-top: 150px;
+}
+.c_3 .c_text{
+    margin-left: 100px;
+}
+.store_btn{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -239.5px;
+}
+.store_btn li{
+    float: left;
+}
+.store_btn li img{
+    display: block;
+}
+.store_btn li a{
+    display: block;
+}
+.store_btn li:nth-child(2){
+    padding: 15px 15px 0;
+}
+#footer{
+    height: 600px;
+    background: url(../images/footer_bg.png) no-repeat center;
+}
+.copyright{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright h2{
+    margin: 250px 0 55px;
+}
+.copyright p{
+    margin-top: 55px;
+    line-height: 1.7em;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.tool{
+    display: flex;
+}
+.tool li{
+    margin: 0 10px;
+}
